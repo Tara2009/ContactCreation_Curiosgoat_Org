@@ -15,9 +15,9 @@ Entering a Contacts
     ClickText              Contacts
     ClickUntil             New Contact                 New
     UseModal               On
-    TypeText               Phone                       +917398867459
+    TypeText               Phone                       +917396637458
     Picklist               Salutation                  Mr.
-    TypeText               First Name                  tara srinivas16
+    TypeText               First Name                  tara srinivas20051979
     TypeText               Last Name                   chandika
     ComboBox               Search Accounts...          GenePoint
     TypeText               Email                       tvsh@gmail.com
