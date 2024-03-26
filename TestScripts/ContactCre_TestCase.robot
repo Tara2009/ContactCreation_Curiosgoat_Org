@@ -17,12 +17,19 @@ Entering a Contacts
     UseModal               On
     TypeText               Phone                       +9173966374987
     Picklist               Salutation                  Mr.
-    TypeText               First Name                  VinnuHarshilkalyan
+    TypeText               First Name                  VinnuHarshilkalyan123
     TypeText               Last Name                   chandika
     ComboBox               Search Accounts...          GenePoint
     TypeText               Email                       tvsh@gmail.com
     TypeText               Title                       project26
-    #ClickText              Save                        partial_match=False
+    ClickText              Save                        partial_match=False
     UseModal               Off
+    ClickText              Related
+    ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
+    #UseModal    On
+    #ClickText    Done
+    #UseModal    Off
 
     # End creation of contacts
+
+    
