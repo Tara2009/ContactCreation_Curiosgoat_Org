@@ -36,7 +36,7 @@ Entering a Contacts
     #VerifyText       Desktop
     #ClickText        Data
     #UploadFile      UploadFile                  Choose File                 ${BASE_FILE_PATH}
-    UploadFile       locator=//input{@name="fileInput"}                      filename=${CURDIR}/../Data/Testupload.txt    visibility=false
+    UploadFile       filename=${CURDIR}/../Data/Testupload.txt    visibility=false
     #UseModal        On
     #ClickText       Done
     #UseModal        Off
