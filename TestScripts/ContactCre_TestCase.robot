@@ -5,6 +5,7 @@
 Resource             ../Resourcefiles/Common.robot
 Suite Setup          Setup Browser
 Suite Teardown       End suite
+Library              QVision
 
 *** Variables ***
 ${BASE_FILE_PATH}    ${CURDIR}/Data/Testupload.txt                           # Set the base file path to the Data directory
@@ -14,7 +15,7 @@ ${BASE_FILE_PATH}    ${CURDIR}/Data/Testupload.txt                           # S
 Entering a Contacts
     [Tags]           Contact
     Appstate         Home
-    #Set Config       BASE_FILE_PATH              ${BASE_FILE_PATH}
+    #Set Config      BASE_FILE_PATH              ${BASE_FILE_PATH}
     LaunchApp        Sales
     ClickText        Contacts
     ClickUntil       New Contact                 New
@@ -34,7 +35,8 @@ Entering a Contacts
     UseModal         On
     VerifyText       Desktop
     ClickText        Data
-    UploadFile       UploadFile                  Choose File                 ${BASE_FILE_PATH}
+    #UploadFile      UploadFile                  Choose File                 ${BASE_FILE_PATH}
+    UploadFile       locator=//input{@name="fileInput"}                      filename=${CURDIR}/../Data/Testupload.txt    visibility=false
     #UseModal        On
     #ClickText       Done
     #UseModal        Off
