@@ -21,7 +21,7 @@ Entering a Contacts
     UseModal         On
     TypeText         Phone                       +9173966374987
     Picklist         Salutation                  Mr.
-    TypeText         First Name                  VinnuHarshilkalyan987
+    TypeText         First Name                  VinnuHarshilkalyan9890
     TypeText         Last Name                   chandika
     TypeText         Person Location             this345
     ComboBox         Search Accounts...          GenePoint
