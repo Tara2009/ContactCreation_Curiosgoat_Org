@@ -19,6 +19,7 @@ Entering a Contacts
     Picklist               Salutation                  Mr.
     TypeText               First Name                  VinnuHarshilkalyan123
     TypeText               Last Name                   chandika
+    TypeText               Person Location             this345
     ComboBox               Search Accounts...          GenePoint
     TypeText               Email                       tvsh@gmail.com
     TypeText               Title                       project26
