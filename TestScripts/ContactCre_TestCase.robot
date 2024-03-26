@@ -15,13 +15,13 @@ Entering a Contacts
     ClickText              Contacts
     ClickUntil             New Contact                 New
     UseModal               On
-    TypeText               Phone                       +917396637458
+    TypeText               Phone                       +9173966374987
     Picklist               Salutation                  Mr.
-    TypeText               First Name                  VinnuHarshil0105
+    TypeText               First Name                  VinnuHarshilkalyan
     TypeText               Last Name                   chandika
     ComboBox               Search Accounts...          GenePoint
     TypeText               Email                       tvsh@gmail.com
-    TypeText               Title                       project16
+    TypeText               Title                       project26
     #ClickText              Save                        partial_match=False
     UseModal               Off
 
