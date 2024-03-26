@@ -22,8 +22,8 @@ Entering a Contacts
     UseModal         On
     TypeText         Phone                       +9173966374987
     Picklist         Salutation                  Mr.
-    TypeText         First Name                  VinnuHarshilkalyan9870
-    TypeText         Last Name                   chandika
+    TypeText         First Name                  Test9860
+    TypeText         Last Name                   dika
     TypeText         Person Location             this345
     ComboBox         Search Accounts...          GenePoint
     TypeText         Email                       tvsh@gmail.com
@@ -36,7 +36,7 @@ Entering a Contacts
     #VerifyText       Desktop
     #ClickText        Data
     #UploadFile      UploadFile                  Choose File                 ${BASE_FILE_PATH}
-    UploadFile       filename=${CURDIR}/../Data/Testupload.txt    visibility=false
+    UploadFile       locator=//input{@name="fileInput"}                      filename=${CURDIR}/../Data/Testupload.txt    visibility=false
     #UseModal        On
     #ClickText       Done
     #UseModal        Off
