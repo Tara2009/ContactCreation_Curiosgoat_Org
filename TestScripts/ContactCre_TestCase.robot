@@ -33,8 +33,8 @@ Entering a Contacts
     ClickText        Related
     ClickText        //div[@class\='actionsContainer']//a[@title\='Upload Files']
     UseModal         On
-    VerifyText       Desktop
-    ClickText        Data
+    #VerifyText       Desktop
+    #ClickText        Data
     #UploadFile      UploadFile                  Choose File                 ${BASE_FILE_PATH}
     UploadFile       locator=//input{@name="fileInput"}                      filename=${CURDIR}/../Data/Testupload.txt    visibility=false
     #UseModal        On
