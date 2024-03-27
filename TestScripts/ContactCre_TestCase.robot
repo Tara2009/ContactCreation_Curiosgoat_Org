@@ -31,7 +31,7 @@ Entering a Contacts
     ClickText        Save                        partial_match=False
     UseModal         Off
     ClickText        Related
-    UploadFile       Upload Files                ${CURDIR}/../Data/Testupload.txt
+    UploadFile       Upload Files                ${CURDIR}/../Data/Testupload.txt        index=2
     ClickText       //div[@class\='actionsContainer']//a[@title\='Upload Files']
     Sleep            10s
     UseModal         On
