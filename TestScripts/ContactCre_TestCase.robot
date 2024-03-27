@@ -31,17 +31,17 @@ Entering a Contacts
     ClickText        Save                        partial_match=False
     UseModal         Off
     ClickText        Related
-    Sleep            10s
+    UploadFile       Upload Files                D:\Workingfolder\Copado\API-Automation\RestApi_Sites.txt
     ClickText        //div[@class\='actionsContainer']//a[@title\='Upload Files']
     Sleep            10s
     UseModal         On
-    #VerifyText       Desktop
-    #ClickText        Data
+    #VerifyText      Desktop
+    #ClickText       Data
     #UploadFile      UploadFile                  Choose File                 ${BASE_FILE_PATH}
-    UploadFile       locator=//input{@name="fileInput"}                      filename=${CURDIR}/../Data/Testupload.txt    visibility=false
-    #UseModal        On
-    #ClickText       Done
-    #UseModal        Off
+    #UploadFile      locator=//input{@name="fileInput"}                      filename=${CURDIR}/../Data/Testupload.txt    visibility=false
+    UseModal         On
+    ClickText        Done
+    UseModal         Off
 
     # End creation of contacts
 
