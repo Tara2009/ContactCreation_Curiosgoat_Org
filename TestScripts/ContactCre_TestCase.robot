@@ -22,7 +22,7 @@ Entering a Contacts
     UseModal         On
     TypeText         Phone                       +9173966374987
     Picklist         Salutation                  Mr.
-    TypeText         First Name                  Test986655
+    TypeText         First Name                  Test765
     TypeText         Last Name                   dika
     TypeText         Person Location             this345
     ComboBox         Search Accounts...          GenePoint
@@ -31,7 +31,8 @@ Entering a Contacts
     ClickText        Save                        partial_match=False
     UseModal         Off
     ClickText        Related
-    UploadFile       Upload Files                ${CURDIR}/../Data/Testupload.txt        index=2
+    #UploadFile       Upload Files                ${CURDIR}/../Data/Testupload.txt        index=2
+    UploadFile       //*[@id\="tab-5"]/slot/flexipage-component2[2]/slot/lst-related-list-container/div/div[4]/lst-related-list-single-container/laf-progressive-container/slot/lst-related-list-single-aura-wrapper/div/div/article/div[2]/div/div/div/div/div/div[2]/lightning-input/lightning-primitive-input-file/div/div    ${CURDIR}/../Data/Testupload.txt        index=2
     ClickText       //div[@class\='actionsContainer']//a[@title\='Upload Files']
     Sleep            10s
     UseModal         On
