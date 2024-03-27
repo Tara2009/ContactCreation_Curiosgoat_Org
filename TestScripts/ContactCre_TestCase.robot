@@ -31,7 +31,9 @@ Entering a Contacts
     ClickText        Save                        partial_match=False
     UseModal         Off
     ClickText        Related
+    Sleep            10s
     ClickText        //div[@class\='actionsContainer']//a[@title\='Upload Files']
+    Sleep            10s
     UseModal         On
     #VerifyText       Desktop
     #ClickText        Data
