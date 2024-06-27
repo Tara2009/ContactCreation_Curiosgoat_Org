@@ -22,12 +22,12 @@ Entering a Contacts
     UseModal               On
     TypeText               Phone                       +9173966374987
     Picklist               Salutation                  Mr.
-    TypeText               First Name                  TaraDone
-    TypeText               Last Name                   dika
+    TypeText               First Name                  TaraDoneUploadFile
+    TypeText               Last Name                   ch
     TypeText               Person Location             this345
     ComboBox               Search Accounts...          GenePoint
     TypeText               Email                       tvsh@gmail.com
-    TypeText               Title                       project26
+    TypeText               Title                       project30
     ClickText              Save                        partial_match=False
     UseModal               Off
     ClickText              Related
