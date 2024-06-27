@@ -6,6 +6,7 @@ Resource                   ../Resourcefiles/Common.robot
 Suite Setup                Setup Browser
 Suite Teardown             End suite
 Library                    QVision
+Library                    SeleniumLibrary
 
 *** Variables ***
 ${BASE_FILE_PATH}          ${CURDIR}/Data/Testupload.txt                           # Set the base file path to the Data directory
@@ -34,13 +35,14 @@ Entering a Contacts
     ${uploadpath}          Set Variable                ${CURDIR}/../Data/TestUpload.txt
     Log                    ${uploadpath}
     ClickText              Related
-    #UploadFile            Upload Files                ${CURDIR}/../Data/Testupload.txt    index=2
+    #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
     #UploadFile            //*[@id\="tab-5"]/slot/flexipage-component2[2]/slot/lst-related-list-container/div/div[4]/lst-related-list-single-container/laf-progressive-container/slot/lst-related-list-single-aura-wrapper/div/div/article/div[2]/div/div/div/div/div/div[2]/lightning-input/lightning-primitive-input-file/div/div    ${CURDIR}/../Data/Testupload.txt    index=2
     ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
+    UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
     Sleep                  10s
-    QVision.DoubleClick    suite
-    QVision.DoubleClick    Data
-    QVision.DoubleClick    TestupLoad.txt
+    #QVision.DoubleClick    suite
+    #QVision.DoubleClick    Data
+    #QVision.DoubleClick    TestupLoad.txt
     #UseModal              On
     #VerifyText            Desktop
     #ClickText             Data
