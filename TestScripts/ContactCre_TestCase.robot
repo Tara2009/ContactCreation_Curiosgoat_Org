@@ -31,6 +31,8 @@ Entering a Contacts
     ClickText              Save                        partial_match=False
     UseModal               Off
     Log                    ${CURDIR}
+    ${uploadpath}          Set Variable                ${CURDIR}/../Data/TestUpload.txt
+    Log                    ${uploadpath}
     ClickText              Related
     #UploadFile            Upload Files                ${CURDIR}/../Data/Testupload.txt    index=2
     #UploadFile            //*[@id\="tab-5"]/slot/flexipage-component2[2]/slot/lst-related-list-container/div/div[4]/lst-related-list-single-container/laf-progressive-container/slot/lst-related-list-single-aura-wrapper/div/div/article/div[2]/div/div/div/div/div/div[2]/lightning-input/lightning-primitive-input-file/div/div    ${CURDIR}/../Data/Testupload.txt    index=2
