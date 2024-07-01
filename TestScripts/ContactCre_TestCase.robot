@@ -32,17 +32,19 @@ Entering a Contacts
     ClickText              Save                        partial_match=False
     UseModal               Off
     Log                    ${CURDIR}
-    ${uploadpath}          Set Variable                ${CURDIR}/../Data/TestUpload.txt
+    ${uploadpath}          Set Variable                ${CURDIR}//Data/TestUpload.txt
     Log                    ${uploadpath}
     ClickText              Related
-    #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
+    UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
     #UploadFile            //*[@id\="tab-5"]/slot/flexipage-component2[2]/slot/lst-related-list-container/div/div[4]/lst-related-list-single-container/laf-progressive-container/slot/lst-related-list-single-aura-wrapper/div/div/article/div[2]/div/div/div/div/div/div[2]/lightning-input/lightning-primitive-input-file/div/div    ${CURDIR}/../Data/Testupload.txt    index=2
     ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
-    #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
+    UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
+    # Start Working CODE FROM regression testing
     QVision.DoubleClick    execution
     QVision.DoubleClick    ContactCreation_Curiosgoat_Org
     QVision.DoubleClick    Data
     QVision.DoubleClick    TestupLoad.txt
+    # End Working CODE FROM regression testing
     Sleep                  10s
     #QVision.DoubleClick    suite
     #QVision.DoubleClick    Data
