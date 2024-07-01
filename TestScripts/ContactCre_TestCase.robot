@@ -42,6 +42,7 @@ Entering a Contacts
     QVision.DoubleClick    execution
     QVision.DoubleClick    ContactCreation_Curiosgoat_Org
     QVision.DoubleClick    Data
+    QVision.DoubleClick    TestupLoad.txt
     Sleep                  10s
     #QVision.DoubleClick    suite
     #QVision.DoubleClick    Data
