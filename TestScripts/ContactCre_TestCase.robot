@@ -41,6 +41,7 @@ Entering a Contacts
     #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
     QVision.DoubleClick    execution
     QVision.DoubleClick    ContactCreation_Curiosgoat_Org
+    QVision.DoubleClick    DATA
     Sleep                  10s
     #QVision.DoubleClick    suite
     #QVision.DoubleClick    Data
