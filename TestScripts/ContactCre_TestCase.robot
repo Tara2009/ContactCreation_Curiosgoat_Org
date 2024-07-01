@@ -6,7 +6,6 @@ Resource                   ../Resourcefiles/Common.robot
 Suite Setup                Setup Browser
 Suite Teardown             End suite
 Library                    QVision
-Library                    SeleniumLibrary
 
 *** Variables ***
 ${BASE_FILE_PATH}          ${CURDIR}/Data/Testupload.txt                           # Set the base file path to the Data directory
