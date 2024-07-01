@@ -36,7 +36,7 @@ Entering a Contacts
     Log                    ${uploadpath}
     ClickText              Related
    #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
-    Choose File           Upload File                 ${uploadpath}     #uncomment and testing
+    #Choose File           Upload File                 ${uploadpath}     #uncomment and testing
     #UploadFile            //*[@id\="tab-5"]/slot/flexipage-component2[2]/slot/lst-related-list-container/div/div[4]/lst-related-list-single-container/laf-progressive-container/slot/lst-related-list-single-aura-wrapper/div/div/article/div[2]/div/div/div/div/div/div[2]/lightning-input/lightning-primitive-input-file/div/div    ${CURDIR}/../Data/Testupload.txt    index=2
     ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
     UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
