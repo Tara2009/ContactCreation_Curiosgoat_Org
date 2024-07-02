@@ -30,35 +30,40 @@ Entering a Contacts
     TypeText               Title                       project30
     ClickText              Save                        partial_match=False
     UseModal               Off
-   #Log                    ${CURDIR}
-    #${uploadpath}          Set Variable                ${CURDIR}//Data/TestUpload.txt
-    #Log                    ${uploadpath}
     ClickText              Related
-    #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
-    #Choose File           Upload File                 ${uploadpath}     #uncomment and testing
-    #UploadFile            //*[@id\="tab-5"]/slot/flexipage-component2[2]/slot/lst-related-list-container/div/div[4]/lst-related-list-single-container/laf-progressive-container/slot/lst-related-list-single-aura-wrapper/div/div/article/div[2]/div/div/div/div/div/div[2]/lightning-input/lightning-primitive-input-file/div/div    ${CURDIR}/../Data/Testupload.txt    index=2
     ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
-    #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
-    # Start Working CODE FROM regression testing
+   #Start below code use for Regression testing, Because testing is using for different path
     QVision.DoubleClick    execution
     QVision.DoubleClick    ContactCreation_Curiosgoat_Org
     QVision.DoubleClick    Data
     QVision.DoubleClick    TestupLoad.txt
-    # End Working CODE FROM regression testing
+   #End below code use for Regression testing, Because regression testing is using for different path
     Sleep                  10s
+   #Start Below code use for live Testing, because live testing is using for different path
     #QVision.DoubleClick    suite
     #QVision.DoubleClick    Data
     #QVision.DoubleClick    TestupLoad.txt
-    #UseModal              On
-    #VerifyText            Desktop
-    #ClickText             Data
-    #UploadFile            UploadFile                  Choose File                 ${BASE_FILE_PATH}
-    #UploadFile            locator=//input{@name="fileInput"}                      filename=${CURDIR}/../Data/Testupload.txt    visibility=false
+   #End Below code use for live Testing, because live testing is using for different path
     VerifyText             Upload Files
     VerifyText             1 of 1 file uploaded
     UseModal               On
     ClickText              Done
     UseModal               Off
+    Sleep                  10s
+    
+    #Log                    ${CURDIR}
+    #${uploadpath}          Set Variable                ${CURDIR}//Data/TestUpload.txt
+    #Log                    ${uploadpath}    
+    #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
+    #Choose File           Upload File                 ${uploadpath}     #uncomment and testing
+    #UploadFile            //*[@id\="tab-5"]/slot/flexipage-component2[2]/slot/lst-related-list-container/div/div[4]/lst-related-list-single-container/laf-progressive-container/slot/lst-related-list-single-aura-wrapper/div/div/article/div[2]/div/div/div/div/div/div[2]/lightning-input/lightning-primitive-input-file/div/div    ${CURDIR}/../Data/Testupload.txt    index=2
+    #UploadFile            Upload Files                ${uploadpath}   index=2  #uncomment and testing
+   
+    #UseModal              On
+    #VerifyText            Desktop
+    #ClickText             Data
+    #UploadFile            UploadFile                  Choose File                 ${BASE_FILE_PATH}
+    #UploadFile            locator=//input{@name="fileInput"}                      filename=${CURDIR}/../Data/Testupload.txt    visibility=false
 
     # End creation of contacts
 
