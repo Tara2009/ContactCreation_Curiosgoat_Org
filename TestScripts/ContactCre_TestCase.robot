@@ -7,6 +7,7 @@ Suite Setup                Setup Browser
 Suite Teardown             End suite
 Library                    QVision
 Library                    OperatingSystem
+Library                    SeleniumLibrary
 
 *** Variables ***
 ${BASE_FILE_PATH}          ${CURDIR}/Data/Testupload.txt                           # Set the base file path to the Data directory
@@ -37,16 +38,19 @@ Entering a Contacts
     ClickText              Related
     ${filpath}=            Set Variable                ${CURDIR}/../Data/Testupload.txt
     ${filpath}             Normalize Path              ${filpath}
+    Choose File             //div[@class\='actionsContainer']//a[@title\='Upload Files']      ${filpath} 
+    Sleep                  10s
     #UploadFile             //div[@class\='actionsContainer']//a[@title\='Upload Files']      ${filpath}               
-    ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
-    UploadFile             //div[@class\='actionsContainer']//a[@title\='Upload Files']      ${filpath} 
+    #ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
+    #UploadFile             //div[@class\='actionsContainer']//a[@title\='Upload Files']      ${filpath} 
+    
    #Start below code use for Regression testing, Because testing is using for different path
     #QVision.DoubleClick    execution
     #QVision.DoubleClick    ContactCreation_Curiosgoat_Org
     #QVision.DoubleClick    Data
     #QVision.DoubleClick    TestupLoad.txt
    #End below code use for Regression testing, Because regression testing is using for different path
-    Sleep                  10s
+    
    #Start Below code use for live Testing, because live testing is using for different path
     #QVision.DoubleClick    suite
     #QVision.DoubleClick    Data
