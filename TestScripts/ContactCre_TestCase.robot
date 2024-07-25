@@ -36,7 +36,7 @@ Entering a Contacts
     Log              ${EXECDIR}
     Log              ${CURDIR}/../Data/Testupload.txt
     ClickText        Related
-    ${filpath}=      Set Variable                ${EXECDIR}/../Data/Testupload.txt
+    ${filpath}=      Set Variable                ${EXECDIR}/**/Data/Testupload.txt
     #${CURDIR}/../Data/Testupload.txt
     ${filpath}       Normalize Path              ${filpath}
     UploadFile       //div[@class\='actionsContainer']//a[@title\='Upload Files']    ${filpath}
