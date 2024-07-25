@@ -40,7 +40,7 @@ Entering a Contacts
     #${CURDIR}/../Data/Testupload.txt
     ${filpath}       Normalize Path              ${filpath}
     Sleep            2s
-    UploadFile       //div[@class\='actionsContainer']//a[@title\='Upload Files']    Testupload.txt
+    UploadFile       //div[@class\='actionsContainer']//a[@title\='Upload Files']    Testupload.txt    anchor=1    timeout=10    index=1
     #Choose File     //div[@class\='actionsContainer']//a[@title\='Upload Files']    ${filpath}
     #SeleniumLibrary.Choose File                 //div[@class\='actionsContainer']//a[@title\='Upload Files']    ${filpath}
     Sleep            10s
