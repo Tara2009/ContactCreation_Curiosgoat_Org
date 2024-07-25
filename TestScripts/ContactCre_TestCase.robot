@@ -16,7 +16,7 @@ ${BASE_FILE_PATH}          ${CURDIR}/Data/Testupload.txt                        
 Entering a Contacts
     [Tags]                 Contact
     Appstate               Home
-    Set Config            BASE_FILE_PATH              ${BASE_FILE_PATH}
+    #Set Config            BASE_FILE_PATH              ${BASE_FILE_PATH}
     LaunchApp              Sales
     ClickText              Contacts
     ClickUntil             New Contact                 New
