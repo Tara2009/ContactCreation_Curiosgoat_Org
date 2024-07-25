@@ -40,13 +40,14 @@ Entering a Contacts
     #${CURDIR}/../Data/Testupload.txt
     ${filpath}       Normalize Path              ${filpath}
     Sleep            2s
-    UploadFile       //div[@class\='actionsContainer']//a[@title\='Upload Files']    Testupload.txt    anchor=1    timeout=10    index=1
-    #Choose File     //div[@class\='actionsContainer']//a[@title\='Upload Files']    ${filpath}
-    #SeleniumLibrary.Choose File                 //div[@class\='actionsContainer']//a[@title\='Upload Files']    ${filpath}
+    UploadFile       //ul[@class\='branding-actions slds-button-group slds-m-left--xx-small small oneActionsRibbon forceActionsContainer']//div[@title\='Upload Files']    Testupload.txt    anchor=1    timeout=10    index=1
+    #UploadFile      //div[@class\='actionsContainer']//a[@title\='Upload Files']        Testupload.txt           anchor=1    timeout=10    index=1
+    #Choose File     //div[@class\='actionsContainer']//a[@title\='Upload Files']        ${filpath}
+    #SeleniumLibrary.Choose File                 //div[@class\='actionsContainer']//a[@title\='Upload Files']     ${filpath}
     Sleep            10s
-    #UploadFile      //div[@class\='actionsContainer']//a[@title\='Upload Files']    ${filpath}
+    #UploadFile      //div[@class\='actionsContainer']//a[@title\='Upload Files']        ${filpath}
     #ClickText       //div[@class\='actionsContainer']//a[@title\='Upload Files']
-    #UploadFile      //div[@class\='actionsContainer']//a[@title\='Upload Files']    ${filpath}
+    #UploadFile      //div[@class\='actionsContainer']//a[@title\='Upload Files']        ${filpath}
 
     #Start below code use for Regression testing, Because testing is using for different path
     #QVision.DoubleClick                         execution
@@ -70,10 +71,10 @@ Entering a Contacts
     #Log             ${CURDIR}
     #${uploadpath}                               Set Variable                ${CURDIR}//Data/TestUpload.txt
     #Log             ${uploadpath}
-    #UploadFile      Upload Files                ${uploadpath}               index=2    #uncomment and testing
+    #UploadFile      Upload Files                ${uploadpath}               index=2     #uncomment and testing
     #Choose File     Upload File                 ${uploadpath}               #uncomment and testing
     #UploadFile      //*[@id\="tab-5"]/slot/flexipage-component2[2]/slot/lst-related-list-container/div/div[4]/lst-related-list-single-container/laf-progressive-container/slot/lst-related-list-single-aura-wrapper/div/div/article/div[2]/div/div/div/div/div/div[2]/lightning-input/lightning-primitive-input-file/div/div    ${CURDIR}/../Data/Testupload.txt    index=2
-    #UploadFile      Upload Files                ${uploadpath}               index=2    #uncomment and testing
+    #UploadFile      Upload Files                ${uploadpath}               index=2     #uncomment and testing
 
     #UseModal        On
     #VerifyText      Desktop
