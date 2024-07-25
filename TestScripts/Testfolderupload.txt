@@ -1,6 +1,0 @@
-branding-actions slds-button-group slds-m-left--xx-small small oneActionsRibbon forceActionsContainer
-
-
-//div[@class="actionsContainer"]//ul[@class="branding-actions slds-button-group slds-m-left--xx-small small oneActionsRibbon forceActionsContainer"]//a[@title="Upload Files"]
-
-//div[@class="actionsContainer"]//a[@title="Upload Files"]
