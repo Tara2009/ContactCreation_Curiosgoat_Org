@@ -36,11 +36,11 @@ Entering a Contacts
     Log              ${EXECDIR}
     Log              ${CURDIR}/../Data/Testupload.txt
     ClickText        Related
-    ${filpath}=      Set Variable                ${EXECDIR}/**/Data/Testupload.txt
+    ${filpath}=      Set Variable                ${CURDIR}/Testupload.txt
     #${CURDIR}/../Data/Testupload.txt
-    ${filpath}       Normalize Path              ${filpath}
+    #${filpath}       Normalize Path              ${filpath}
     Sleep            2s
-    UploadFile      //div[@class\='actionsContainer']//a[@title\='Upload Files']        Testupload.txt           anchor=u    timeout=10
+    UploadFile      //div[@class\='actionsContainer']//a[@title\='Upload Files']        ${filpath}           anchor=u    timeout=10
     #Choose File     //div[@class\='actionsContainer']//a[@title\='Upload Files']        ${filpath}
     #SeleniumLibrary.Choose File                 //div[@class\='actionsContainer']//a[@title\='Upload Files']     ${filpath}
     Sleep            10s
