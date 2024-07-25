@@ -37,9 +37,9 @@ Entering a Contacts
     ClickText              Related
     ${filpath}=            Set Variable                ${CURDIR}/../Data/Testupload.txt
     ${filpath}             Normalize Path              ${filpath}
-    UploadFile             //div[@class\='actionsContainer']//a[@title\='Upload Files']      ${filpath}               
-    #ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
-    #UploadFile             //div[@class\='actionsContainer']//a[@title\='Upload Files']      ${filpath} 
+    #UploadFile             //div[@class\='actionsContainer']//a[@title\='Upload Files']      ${filpath}               
+    ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
+    UploadFile             //div[@class\='actionsContainer']//a[@title\='Upload Files']      ${filpath} 
    #Start below code use for Regression testing, Because testing is using for different path
     #QVision.DoubleClick    execution
     #QVision.DoubleClick    ContactCreation_Curiosgoat_Org
