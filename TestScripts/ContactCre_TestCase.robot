@@ -30,6 +30,8 @@ Entering a Contacts
     TypeText               Title                       project30
     ClickText              Save                        partial_match=False
     UseModal               Off
+    Log                    ${CURDIR}
+    Log                    ${EXECDIR}
     ClickText              Related
     ClickText              //div[@class\='actionsContainer']//a[@title\='Upload Files']
    #Start below code use for Regression testing, Because testing is using for different path
