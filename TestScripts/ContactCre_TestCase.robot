@@ -24,7 +24,7 @@ Entering a Contacts
     UseModal               On
     TypeText               Phone                       +9173966374987
     Picklist               Salutation                  Mr.
-    TypeText               First Name                  uploadpathfile12354
+    TypeText               First Name                  Ohmygod please help to work upload file
     TypeText               Last Name                   ch
     TypeText               Person Location             this345
     ComboBox               Search Accounts...          GenePoint
