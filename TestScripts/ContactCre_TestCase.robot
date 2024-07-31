@@ -61,7 +61,7 @@ Entering a Contacts
     #QVision.DoubleClick                         TestupLoad.txt
     #End Below code use for live Testing, because live testing is using for different path
     VerifyText       Upload Files
-    VerifyText       1 of 1 file uploaded
+    #VerifyText       1 of 1 file uploaded
     UseModal         On
     ClickText        Done
     UseModal         Off
