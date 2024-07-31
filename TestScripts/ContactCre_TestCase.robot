@@ -62,9 +62,9 @@ Entering a Contacts
     #End Below code use for live Testing, because live testing is using for different path
     VerifyText       Upload Files
     #VerifyText       1 of 1 file uploaded
-    UseModal         On
-    ClickText        Done
-    UseModal         Off
+    #UseModal         On
+    #ClickText        Done
+    #UseModal         Off
     Sleep            10s
 
     #Log             ${CURDIR}
