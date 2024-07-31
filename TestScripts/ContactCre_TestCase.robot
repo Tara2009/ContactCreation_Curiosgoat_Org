@@ -7,7 +7,6 @@ Suite Setup          Setup Browser
 Suite Teardown       End suite
 Library              QVision
 Library              OperatingSystem
-Library              SeleniumLibrary
 
 *** Variables ***
 ${BASE_FILE_PATH}    ${CURDIR}/Data/Testupload.txt                           # Set the base file path to the Data directory
